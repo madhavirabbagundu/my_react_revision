@@ -1,0 +1,32 @@
+{
+  "data": [
+    {
+      "id": 0,
+      "name": "Madhavi"
+    },
+    {
+      "id": 1,
+      "name": "Mounika"
+    },
+    {
+      "name": "Madhavi Rabbagundu",
+      "id": 2
+    },
+    {
+      "name": "Madhavi Rabbagundu",
+      "id": 3
+    },
+    {
+      "name": "Ramanji",
+      "id": 4
+    },
+    {
+      "name": "Lakshmi Devi",
+      "id": 5
+    },
+    {
+      "name": "Chaithu",
+      "id": 6
+    }
+  ]
+}
