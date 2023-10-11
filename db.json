@@ -2,31 +2,31 @@
   "data": [
     {
       "id": 0,
-      "name": "Madhavi"
+      "name": "Madhavi",
+      "age": 20,
+      "number": 89874765324,
+      "email": "madhavi@gmail.com"
     },
     {
-      "id": 1,
-      "name": "Mounika"
+      "name": "madhu",
+      "age": "21",
+      "number": "5478963214",
+      "email": "mouni@gmail.com",
+      "id": 1
     },
     {
-      "name": "Madhavi Rabbagundu",
+      "name": "Geetha",
+      "age": "25",
+      "number": "89764532145",
+      "email": "geetha@gmail.com",
       "id": 2
     },
     {
-      "name": "Madhavi Rabbagundu",
+      "name": "Mounika",
+      "age": "25",
+      "number": "06366908401",
+      "email": "2345@gmail.com",
       "id": 3
-    },
-    {
-      "name": "Ramanji",
-      "id": 4
-    },
-    {
-      "name": "Lakshmi Devi",
-      "id": 5
-    },
-    {
-      "name": "Chaithu",
-      "id": 6
     }
   ]
 }

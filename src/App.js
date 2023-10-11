@@ -2,7 +2,8 @@ import React from 'react';
 // import {Count} from './component/Count' ;
 // import { Sum } from './component/Sum';
 // import { Map } from './component/Map';
-import {Todo} from './component/Todo'
+// import {Todo} from './component/Todo'
+import {Forming} from './component/Form'
 import './App.css';
 
 function App() {
@@ -11,7 +12,8 @@ function App() {
      {/* <Count/> */}
      {/* <Sum /> */}
      {/* <Map /> */}
-     <Todo />
+     {/* <Todo /> */}
+     <Forming />
     </div>
   );
 }
