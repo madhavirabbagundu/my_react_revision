@@ -15,7 +15,14 @@ const red = data.reduce((item)=>{
 })
 console.log(red)
 var out = ["a","f","g"]
-const data2 = out.forEach((item)=>{
+const data2 = data.forEach((item) => {
     return item
 })
-console.log(data,data2)
+console.log(data2)
+
+let myArray = [1, 2, 3, 4]; 
+      
+const returnValue = myArray.forEach((element) => { 
+    return element * element; 
+})
+console.log(returnValue); 
