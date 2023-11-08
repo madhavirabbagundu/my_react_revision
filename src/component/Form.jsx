@@ -39,7 +39,7 @@ function Forming(){
     return(
 
         <>
-        <form onSubmit = {handleSubmit}>
+        <form onSubmit = {handleSubmit} className = "mainContainer">
         <input type = "text"
         placeholder = "Enter your name"
         name= "name"
@@ -59,9 +59,8 @@ function Forming(){
         placeholder = "Enter your number"
         name = "number"
         onChange = {handleChange}
-        value = {number}
 
-        />
+        value = {number} />
         <input type = "email"
         placeholder = "Enter your email"
         name = "email"
