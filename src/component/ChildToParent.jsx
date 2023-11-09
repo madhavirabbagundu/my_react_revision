@@ -14,6 +14,7 @@ function ChildToParent({getcolor}){
 placeholder='Enter the color name'
 onChange = {handleChange}
 value = {data}/>
+
     </>
     )
 }
