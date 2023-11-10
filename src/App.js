@@ -6,6 +6,7 @@ import React from 'react';
 // import {Forming} from './component/Form'
 import { ChildToParent } from './component/ChildToParent';
 import './App.css';
+import { ValidityForm } from './component/ValidityForm';
 
 function App() {
   const [Color,setColor] = React.useState(null)
@@ -20,6 +21,7 @@ function App() {
      {/* <Sum /> */}
      {/* <Map /> */}
      {/* <Todo /> */}
+     <ValidityForm />
 
      {/* <Forming /> */}
     </div>
