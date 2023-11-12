@@ -29,7 +29,7 @@ function App() {
      {/* <ValidityForm /> */}
 
      {/* <Forming /> */}
-     <store.Provider value = {[count,setCount]}>
+     <store.Provider value = {[count]}>
       <Context />
      </store.Provider>
     </div>

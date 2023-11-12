@@ -2,10 +2,10 @@ import React, { useContext } from 'react'
 import { store } from '../App'
 
 function Context(){
-    const [count,setCount] = useContext(store)
+    const [count] = useContext(store)
     return(
         <>
-        This is the context {count}
+        This is the context { count }
 
         </>
     )
