@@ -23,13 +23,48 @@
     }
     </style>
 </style>
+<script>
+   function handleClick(){
+    let name = document.getElementById("name").value;
+    let number = document.getElementById("number").value
+    console.log(name,number)
+
+    }
+
+fetch(`https://fakestoreapi.com/products`)
+    .then(function(res){
+      return res.json()
+        // console.log(res)
+    })
+    .then(function(res){
+        console.log(res)
+        product(res)
+    })
+function product(data){
+data.forEach(element => {
+    var div = document.createElement("div")
+
+    var title = document.createElement("p")
+    title.innerHTML = element.title;
+
+    div.append(title);
+    container.append(div)
+});
+}
+</script>
 <body style = "border: 1px solid rgb(212, 29, 29);padding : 30px">
     
-    <div class = "absolute">
-        this is the first absolute
-    </div>
-    <div class = "relative">
-        this is the first relative
-    </div>
+   <div>
+    <input type = "text"
+    placeholder="enter your name" id = "name"/>
+    <input type = "number"
+    placeholder = "enter your nubmer" id = "number"/>
+    <button type = "submit" onclick="handleClick()">Submit</button>
+   </div>
+   <div id = "container">
+    <!-- <h1>{name}</h1>
+    <h2>{number}</h2> -->
+   </div>
+    
 </body>
 </html>
