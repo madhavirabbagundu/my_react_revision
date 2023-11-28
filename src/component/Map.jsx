@@ -1,5 +1,4 @@
 import React from 'react'
-import { useState } from 'react'
 
 function Map(){
     const [data,setData] = React.useState([])
@@ -16,6 +15,7 @@ function Map(){
             data.map((item)=>(
                 <div>
                     <h1>{item.title}</h1>
+                    <h1>{item.name}</h1>
                 </div>
             ))
         }
