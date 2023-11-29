@@ -9,6 +9,7 @@ import './App.css';
 // import { ValidityForm } from './component/ValidityForm';
 import { createContext } from 'react';
 import { Context } from './component/Context';
+import { ChildComponent } from './component/ChildComponent';
  
 export const store = createContext();
 function App() {
@@ -29,6 +30,7 @@ function App() {
      {/* <ValidityForm /> */}
 
      {/* <Forming /> */}
+     <ChildComponent />
      <store.Provider value = {[count]}>
       <Context />
      </store.Provider>
