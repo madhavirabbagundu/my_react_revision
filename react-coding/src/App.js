@@ -1,5 +1,6 @@
 import './App.css';
 import React from 'react';
+import { BackgroundColor } from './Components/BackgroundColor';
 
 function App() {
   const [data,setData] = React.useState({
@@ -8,11 +9,11 @@ function App() {
   })
 
   const handleChnage =(e)=>{
+console.log(e.target.value)
 const {name,value} = e.target;
 setData({...data,[name]:value})
   }
   const handleSubmit = (e)=>{
-    console.log(data)
 
 e.preventDefault()
   }
@@ -29,6 +30,7 @@ e.preventDefault()
    name = "text"/>
    <button type = "submit" value = "submit">Update</button>
    </form>
+   <BackgroundColor />
     </div>
   );
 }
