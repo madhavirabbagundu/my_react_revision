@@ -1,6 +1,7 @@
 import './App.css';
 import React from 'react';
-import { BackgroundColor } from './Components/BackgroundColor';
+// import { BackgroundColor } from './Components/BackgroundColor';
+import { Calculator } from './Components/Calculator';
 
 function App() {
   const [data,setData] = React.useState({
@@ -30,7 +31,8 @@ e.preventDefault()
    name = "text"/>
    <button type = "submit" value = "submit">Update</button>
    </form>
-   <BackgroundColor />
+   {/* <BackgroundColor /> */}
+   <Calculator />
     </div>
   );
 }
