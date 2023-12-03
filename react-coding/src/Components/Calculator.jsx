@@ -11,14 +11,15 @@ function Calculator(){
         setNum('0')
     }
     const handleEqual=(e)=>{
-        console.log(num,"data")
-        const data = eval(num)
+        console.log(e.target.value,num,"data")
+        // const data = eval(num)
 
         // const data = eval(num)
-        setNum(data)
+        // setNum(data)
     }
     return(
         <>
+        
         <h1>
         This is the calculator 
         </h1>
