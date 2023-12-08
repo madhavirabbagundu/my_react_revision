@@ -9,10 +9,10 @@ function App() {
   const [count,setCount] = React.useState(0);
   const [input,setInput] = React.useState("")
   const [show,setShow] = React.useState(false);
-
+  const [data,setData] = React.useState([])
 
   return(
- <userContext.Provider value = {{count,setCount,input,setInput,setShow,show}}>
+ <userContext.Provider value = {{count,setCount,input,setInput,setShow,show,data,setData}}>
   <div>
 <ContextChild />
 </div>
