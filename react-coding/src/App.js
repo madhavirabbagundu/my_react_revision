@@ -1,7 +1,7 @@
 import './App.css';
 import React from 'react';
-import { IncAction } from './Components/Actions';
-import { DecAction } from './Components/Actions';
+// import { IncAction } from './Components/Actions';
+// import { DecAction } from './Components/Actions';
 // import { BackgroundColor } from './Components/BackgroundColor';
 // import { createContext } from 'react';
 // import {ContextChild} from './Components/ContextChild'
@@ -28,7 +28,11 @@ function App({ local_state,IncAction,DecAction }) {
  
 }
 
-const mapStateToProps = state =>({
+const mapStateToProps = (state) =>({
   local_state : state
 })
-export default connect(mapStateToProps,{IncAction,DecAction})(App);
+const mapDispatchToProps = (dispatch) => ({
+  IncAction: () => dispatch({ type: 'INCREMENT' }),
+  DecAction: () => dispatch({ type: 'DECREMENT' }),
+});
+export default connect(mapStateToProps,mapDispatchToProps)(App);
