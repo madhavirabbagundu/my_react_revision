@@ -1,4 +1,4 @@
-const count = 10;
+const count = 1;
 
  function Reducer(state=count,action){
     const {type,payload} = action;

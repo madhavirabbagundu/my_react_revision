@@ -5,9 +5,10 @@ import React from 'react';
 // import { BackgroundColor } from './Components/BackgroundColor';
 // import { createContext } from 'react';
 // import {ContextChild} from './Components/ContextChild'
-import { connect } from 'react-redux';
+// import { connect } from 'react-redux';
+import { Sum } from './Components/Sum'
 // export const userContext = createContext(null);
-function App({ local_state,IncAction,DecAction }) {
+function App() {
   // const [count,setCount] = React.useState(0);
   // const [input,setInput] = React.useState("")
   // const [show,setShow] = React.useState(false);
@@ -15,9 +16,10 @@ function App({ local_state,IncAction,DecAction }) {
 
   return(
     <>
-    <h1>Redux:{ local_state }</h1>
-    <button onClick = {IncAction}>INC</button>
-   <button onClick = {DecAction}>DEC</button>
+    <Sum />
+    {/* <h1>Redux:{ local_state }</h1> */}
+    {/* <button onClick = {IncAction}>INC</button> */}
+   {/* <button onClick = {DecAction}>DEC</button> */}
     </>
 //  <userContext.Provider value = {{count,setCount,input,setInput,setShow,show,data,setData}}>
 //   <div>
@@ -28,11 +30,12 @@ function App({ local_state,IncAction,DecAction }) {
  
 }
 
-const mapStateToProps = (state) =>({
-  local_state : state
-})
-const mapDispatchToProps = (dispatch) => ({
-  IncAction: () => dispatch({ type: 'INCREMENT' }),
-  DecAction: () => dispatch({ type: 'DECREMENT' }),
-});
-export default connect(mapStateToProps,mapDispatchToProps)(App);
+// const mapStateToProps = (state) =>({
+//   local_state : state
+// })
+// const mapDispatchToProps = (dispatch) => ({
+//   IncAction: () => dispatch({ type: 'INCREMENT' }),
+//   DecAction: () => dispatch({ type: 'DECREMENT' }),
+// });
+// export default connect(mapStateToProps,{IncAction,DecAction})(App);
+export default App;
