@@ -18,7 +18,6 @@ function Sum(){
     console.log(sum)
 
     }
-console.log(sum)
     const {firstNumber,secondNumber} = first;
 return (
     <>
