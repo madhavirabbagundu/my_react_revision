@@ -8,6 +8,6 @@ import { combineReducers } from "redux";
 //     // counting : Reducer,
 //     // stringData :ReducerString
 // });
-const store = createStore(ReducerString);
+const store = createStore(Reducer);
 
 export default store;

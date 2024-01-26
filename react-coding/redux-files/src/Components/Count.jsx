@@ -1,7 +1,8 @@
 import React from 'react'
 import { useSelector } from 'react-redux'
 import { useDispatch } from 'react-redux';
-
+import { dispatch } from './Action';
+import { dispatch1 } from './Action';
 
 function Count(){
     const btn = useDispatch()
@@ -12,8 +13,8 @@ function Count(){
     return (
         <>
         <h1>Count is{data} </h1>
-        <button type = "button" onClick={()=>{btn({type:"INCREMENT",payload:5})}}>INCREMENT</button>
-        <button type = "button" onClick={()=>{btn({type:"DECREMENT",payload:2})}}>DECREMENT</button>
+        <button type = "button" onClick={()=>{btn(dispatch())}}>INCREMENT</button>
+        <button type = "button" onClick={()=>{btn(dispatch1())}}>DECREMENT</button>
         <div>
         </div>
         </>
