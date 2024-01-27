@@ -1,4 +1,6 @@
-import { combineReducers } from "redux";
+// import { combineReducers } from "redux";
+
+import { Count } from "./Count";
 
 // import store from "./Store";
 const count = 0;
@@ -9,19 +11,18 @@ export function Reducer(state = count,action){
         switch (action.type) {
             case "INCREMENT":
                 return state+action.payload;
-           case "DECREMENT":
-            return state-action.payload;
+           
            
             default:
                 return state;
         }
 }
-export function ReducerString(state = string,action){
+export function ReducerString(state = count,action){
     console.log(state,action.payload,"payloading")
 
     switch(action.type){
-        case "Todo":
-            return state+action.payload;
+        case "DECREMENT":
+            return state-action.payload;
             default:
                 return state;
     }

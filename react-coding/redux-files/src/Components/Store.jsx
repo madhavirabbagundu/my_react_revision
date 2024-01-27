@@ -3,11 +3,11 @@ import { Reducer } from "./Reducer";
 import {ReducerString} from "./Reducer"
 import { combineReducers } from "redux";
 
-// let reducers = combineReducers(
-//  {
-//     // counting : Reducer,
-//     // stringData :ReducerString
-// });
-const store = createStore(Reducer);
+let reducers = combineReducers(
+ {
+    counting : Reducer,
+    stringData :ReducerString
+});
+const store = createStore(reducers);
 
 export default store;

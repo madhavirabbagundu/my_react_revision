@@ -12,7 +12,8 @@ function Count(){
     console.log(data)
     return (
         <>
-        <h1>Count is{data} </h1>
+        <h1>Count is{data.counting}{data.stringData} </h1>
+
         <button type = "button" onClick={()=>{btn(dispatch())}}>INCREMENT</button>
         <button type = "button" onClick={()=>{btn(dispatch1())}}>DECREMENT</button>
         <div>
