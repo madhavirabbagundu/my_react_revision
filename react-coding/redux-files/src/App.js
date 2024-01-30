@@ -1,6 +1,7 @@
 import React from 'react';
 import './App.css';
-import { Count } from './Components/Count';
+// import { Count } from './Components/Count';
+import { Login } from './Components/Login';
 // import { Input } from './Components/Input';
 
 function App() {
@@ -8,7 +9,8 @@ function App() {
   return (
     <div className="App">
       This is the count one
-     <Count />
+     {/* <Count /> */}
+     <Login />
      {/* <Input /> */}
     </div>
   );

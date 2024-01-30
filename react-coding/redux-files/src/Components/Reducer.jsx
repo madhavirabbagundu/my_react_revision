@@ -3,6 +3,11 @@
 import { Count } from "./Count";
 
 // import store from "./Store";
+
+const login = {
+    name:"",
+    number:""
+}
 const count = 0;
 const string = "";
 export function Reducer(state = count,action){
@@ -25,6 +30,21 @@ export function ReducerString(state = count,action){
             return state-action.payload;
             default:
                 return state;
+    }
+
+}
+
+export function LoginReducer(state = login,action){
+    console.log(action.payload)
+    switch(action.type){
+        case "LoginPage":
+            return {...state,
+                name:action.payload.name,
+                number:action.payload.number
+               }
+           
+                default:
+                    return state;
     }
 
 }
