@@ -8,6 +8,9 @@ const login = {
     name:"",
     number:""
 }
+const api = {
+    details:{},
+}
 const count = 0;
 const string = "";
 export function Reducer(state = count,action){
@@ -45,6 +48,17 @@ export function LoginReducer(state = login,action){
            
                 default:
                     return state;
+    }
+
+}
+
+export function ApiCallingReducer(state = api,action){
+console.log(state,action.payload)
+    switch(action.type){
+        case "ADD":
+            return {...state,details:action.payload}
+            default:
+                return state;
     }
 
 }
