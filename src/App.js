@@ -1,4 +1,6 @@
 import React from 'react';
+import { Game } from './component/Game';
+import { CapitalText } from './component/CapitalText';
 // import {Count} from './component/Count' ;
 // import { Sum } from './component/Sum';
 // import { Map } from './component/Map';
@@ -7,18 +9,19 @@ import React from 'react';
 // import { ChildToParent } from './component/ChildToParent';
 import './App.css';
 // import { ValidityForm } from './component/ValidityForm';
-import { createContext } from 'react';
-import { Context } from './component/Context';
-import { ChildComponent } from './component/ChildComponent';
+// import { createContext } from 'react';
+// import { Context } from './component/Context';
+// import { ChildComponent } from './component/ChildComponent';
  
-export const store = createContext();
+// export const store = createContext();
 function App() {
-  const store = createContext()
+  // const store = createContext()
   const [count,setCount] = React.useState(0)
   // const [Color,setColor] = React.useState(null)
   // const getcolor=(e)=>{
   //   setColor(e)
   // }
+  
   return (
     <div className="App">
       {/* <div style={{border:"2px solid black",backgroundColor:`${Color}`,height:"100%",width:"40%",margin:"auto" ,marginTop:"5%",padding:"10%"}}></div> */}
@@ -30,10 +33,12 @@ function App() {
      {/* <ValidityForm /> */}
 
      {/* <Forming /> */}
-     <ChildComponent />
+     {/* <ChildComponent />
      <store.Provider value = {[count]}>
       <Context />
-     </store.Provider>
+     </store.Provider> */}
+     <Game />
+     <CapitalText />
     </div>
   );
 }
