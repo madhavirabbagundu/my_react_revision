@@ -1,6 +1,14 @@
 .App {
   text-align: center;
 }
+
+.diving{
+  border : 1px solid black;
+  width:10%;
+  height:10%;
+  margin-top: 1%;
+  padding:3%
+}
 .container{
   background-color: #61dafb;
   border: 1px solid black;;

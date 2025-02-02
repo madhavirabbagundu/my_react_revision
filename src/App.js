@@ -1,6 +1,7 @@
 import React from 'react';
 import { Game } from './component/Game';
 import { CapitalText } from './component/CapitalText';
+// import { Color } from './component/Color';
 // import {Count} from './component/Count' ;
 // import { Sum } from './component/Sum';
 // import { Map } from './component/Map';
@@ -8,6 +9,7 @@ import { CapitalText } from './component/CapitalText';
 // import {Forming} from './component/Form'
 // import { ChildToParent } from './component/ChildToParent';
 import './App.css';
+import { Color } from './component/Color';
 // import { ValidityForm } from './component/ValidityForm';
 // import { createContext } from 'react';
 // import { Context } from './component/Context';
@@ -37,6 +39,7 @@ function App() {
      <store.Provider value = {[count]}>
       <Context />
      </store.Provider> */}
+     <Color />
      <Game />
      <CapitalText />
     </div>
